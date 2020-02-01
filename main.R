@@ -22,3 +22,14 @@ vectors<-eigen(R)$vectors
 PC<- Xcr %*% vectors
 #Variables coordinators
 VC <- vectors / sqrt(values)
+
+#Plot the data
+
+plot(PC[,2],
+     PC[,1],
+     main = "Principal Component",
+     type = 'p'
+     )
+plot(VC[,1],
+     VC[,2]
+     )
